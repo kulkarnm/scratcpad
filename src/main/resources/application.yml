@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: billing
+  datasource:
+    host: localhost
+    port: 27017
+  profiles:
+    active: dev
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+server:
+  port: 8091
+
