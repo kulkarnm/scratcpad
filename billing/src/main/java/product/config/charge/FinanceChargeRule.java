@@ -3,9 +3,13 @@ package product.config.charge;
 import product.config.interest.InterestRate;
 import product.config.interest.InterestRateType;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.List;
 
+@Entity
 public class FinanceChargeRule {
+    @Id
     private String chargeRuleId;
     private InterestRateType interestRateType;
     private List<InterestRate> applicableInterestRates;

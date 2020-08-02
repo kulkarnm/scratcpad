@@ -1,8 +1,12 @@
 package product.config.fees;
 
-public abstract class ServiceFee {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class ServiceFee {
+    @Id
     private String feeId;
     private FeeType feeType;
     private double feeValue;
-    public abstract double computeFee();
 }
