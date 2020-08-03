@@ -2,9 +2,14 @@ spring:
   application:
     name: billing
   datasource:
-    host: localhost
-    port: 27017
-  profiles:
+    url: jdbc:mysql://localhost:33099/product
+    password: <ENTER _ PASSWORD _ HERE >
+    username: root
+    driver-class-name: "com.mysql.jdbc.Driver"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
     active: dev
   jackson:
     serialization:

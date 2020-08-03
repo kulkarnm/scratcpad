@@ -1,4 +1,4 @@
-package posting.config;
+package config;
 
 
 import org.apache.kafka.common.serialization.Serdes;

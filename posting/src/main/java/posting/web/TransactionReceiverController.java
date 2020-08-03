@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import posting.web.request.IncomingTransactionRequest;
 
 @RestController
-@RequestMapping(value = "/product")
+@RequestMapping(value = "/posting")
 public class TransactionReceiverController {
-    @RequestMapping(method = RequestMethod.POST, value="category",consumes = "application/json")
-    public ResponseEntity<Object> registerCategory(@RequestBody IncomingTransactionRequest request) throws Exception {
+    @RequestMapping(method = RequestMethod.POST,consumes = "application/json")
+    public ResponseEntity<Object> postTransaction(@RequestBody IncomingTransactionRequest request) throws Exception {
         return null;
     }
 } 
