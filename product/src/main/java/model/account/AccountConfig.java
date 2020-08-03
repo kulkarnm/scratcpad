@@ -1,8 +1,9 @@
 package model.account;
 
-import product.config.charge.FinanceChargeRule;
-import product.config.fees.ServiceFee;
-import product.config.product.Product;
+
+import model.charge.FinanceChargeRule;
+import model.fees.ServiceFee;
+import model.product.Product;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -37,8 +37,6 @@ public class AppConfiguration {
     @Bean
     public KStream<String, Long> kStream(StreamsBuilder kStreamBuilder) {
         KStream<String, Long> stream = kStreamBuilder.stream(inputTopic);
-        this.oddNumberProcessor.process(stream);
-        this.evenNumberProcessor.process(stream);
         return stream;
     }
 } 

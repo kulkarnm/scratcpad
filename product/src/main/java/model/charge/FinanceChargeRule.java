@@ -1,7 +1,8 @@
 package model.charge;
 
-import product.config.interest.InterestRate;
-import product.config.interest.InterestRateType;
+
+import model.interest.InterestRate;
+import model.interest.InterestRateType;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

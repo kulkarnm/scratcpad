@@ -1,6 +1,7 @@
 package model.charge;
 
-import product.config.buckets.BucketCode;
+
+import model.buckets.BucketCode;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

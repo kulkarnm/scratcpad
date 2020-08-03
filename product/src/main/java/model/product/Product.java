@@ -1,7 +1,8 @@
 package model.product;
 
-import product.config.fees.ServiceFee;
-import product.config.plan.Plan;
+
+import model.fees.ServiceFee;
+import model.plan.Plan;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -1,6 +1,7 @@
 package model.payment;
 
-import product.config.product.BillingCycle;
+
+import model.product.BillingCycle;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -1,7 +1,8 @@
 package model.buckets;
 
-import product.config.charge.ChargeCodeType;
-import product.config.transaction.TCode;
+
+import model.charge.ChargeCodeType;
+import model.transaction.TCode;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

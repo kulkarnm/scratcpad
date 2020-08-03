@@ -1,7 +1,8 @@
 package model.plan;
 
-import product.config.buckets.PlanBucketGroup;
-import product.config.charge.FinanceChargeRule;
+
+import model.buckets.PlanBucketGroup;
+import model.charge.FinanceChargeRule;
 
 import java.util.List;
 
