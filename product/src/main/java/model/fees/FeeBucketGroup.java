@@ -1,20 +1,16 @@
-package model.buckets;
+package model.fees;
 
-
+import model.buckets.BucketCode;
 import model.charge.ChargeCodeType;
 import model.transaction.TransactionCode;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.util.List;
-
 @Entity
-public class PlanBucketGroup {
-    @Id
+public class FeeBucketGroup {
     private String bucketGroupCode;
     private String name;
-    private PlanBucketGroupClass planBucketGroupClass;
+    private FeeBucketGroupClass feeBucketGroupClass;
     private List<BucketCode> bucketCodes;
     private List<TransactionCode> mappedTransactionCodes;
-
-} 
+}

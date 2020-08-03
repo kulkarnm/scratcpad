@@ -2,7 +2,7 @@ package model.plan;
 
 
 import model.buckets.PlanBucketGroup;
-import model.charge.FinanceChargeRule;
+import model.interest.InterestRateDefinition;
 
 import java.util.List;
 
@@ -10,6 +10,7 @@ import java.util.List;
 public class Plan {
     private String planId;
     private PlanClass planClass;
-    private FinanceChargeRule applicableChargeRule;
-    private List<PlanBucketGroup> allowedBuckets;
+    private InterestRateDefinition interestRateDefinition;
+    private List<PlanBucketGroup> planBucketGroups;
+    private InterestCalculationStrategy interestCalculationStrategy;
 } 

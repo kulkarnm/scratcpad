@@ -1,6 +1,7 @@
 package model.charge;
 
 
+import model.buckets.Bucket;
 import model.buckets.BucketCode;
 
 import javax.persistence.Entity;
@@ -12,5 +13,5 @@ public class ChargeCode {
     @Id
     private String chargeCodeId;
     private ChargeCodeType chargeCodeType;
-    private List<BucketCode> mappedBucketCodes;
+    private Bucket mappedBucket;
 } 

@@ -15,6 +15,5 @@ public class Product {
     private List<Plan> plans;
     private int yearBase;
     private List<ServiceFee> feesApplicable;
-    private BillingCycle bIllingCycle;
-
-} 
+    //private BillingCycle billingCycle;
+}

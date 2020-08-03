@@ -15,5 +15,5 @@ public class AccountConfig {
     private String accountDefinitionId;
     private Product parentProduct;
     private List<ServiceFee> feesOverride;
-    private List<FinanceChargeRule> chargesOverride;
+    //private List<FinanceChargeRule> chargesOverride;
 } 
