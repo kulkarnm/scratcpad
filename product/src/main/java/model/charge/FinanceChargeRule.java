@@ -1,12 +1,8 @@
 package model.charge;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
-@Entity
 public class FinanceChargeRule {
-    @Id
     private String chargeRuleId;
     // is interest calculation from transaciton date or from posting Date
     private boolean isApplicableOnTransactionDate;

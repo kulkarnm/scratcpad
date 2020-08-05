@@ -39,4 +39,4 @@ public class AppConfiguration {
         KStream<String, Long> stream = kStreamBuilder.stream(inputTopic);
         return stream;
     }
-} 
+}

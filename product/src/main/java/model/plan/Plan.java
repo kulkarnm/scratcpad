@@ -1,8 +1,10 @@
 package model.plan;
 
 
+import model.buckets.BucketCode;
 import model.buckets.PlanBucketGroup;
 import model.interest.InterestRateDefinition;
+import model.transaction.TransactionCode;
 
 import java.util.List;
 
@@ -13,4 +15,7 @@ public class Plan {
     private InterestRateDefinition interestRateDefinition;
     private List<PlanBucketGroup> planBucketGroups;
     private InterestCalculationStrategy interestCalculationStrategy;
+    private List<BucketCode> bucketCodes;
+    private List<TransactionCode> mappedTransactionCodes;
+
 } 

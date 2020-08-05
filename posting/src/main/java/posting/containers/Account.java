@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Account {
     private String accountId;
-    private Product product;
+    private PlanBucketGroup bucketGroup;
     private AccountConfig accountConfig;
     private List<SubAccount> mappedSubAccounts;
 
