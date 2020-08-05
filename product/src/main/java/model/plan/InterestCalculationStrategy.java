@@ -2,8 +2,12 @@ package model.plan;
 
 import model.interest.InterestAccrual;
 import model.interest.InterestCalculationDateConsideration;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document
 public class InterestCalculationStrategy {
+    @Id
     private String interestCalculationStrategyId;
     private String strategyName;
     //transaction date or posting date

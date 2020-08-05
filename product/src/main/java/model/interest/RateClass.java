@@ -1,6 +1,6 @@
 package model.interest;
 
-public enum RateType {
+public enum RateClass {
     FIXED,
     TIERED,
     VARIABLE,

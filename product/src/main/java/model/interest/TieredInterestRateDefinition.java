@@ -1,7 +1,9 @@
 package model.interest;
 
-import java.util.Map;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Map;
+@Document
 public class TieredInterestRateDefinition extends InterestRateDefinition {
     private Map<BalanceRange, Double> tierWiseRateValue;
 }

@@ -1,6 +1,6 @@
 package model.charge;
 
-public enum ChargeCodeType {
+public enum ChargeCodeClass {
     PRINCIPAL,
     INTEREST,
     FEE

@@ -2,22 +2,19 @@ package model.transaction;
 
 import model.buckets.PlanBucketGroup;
 import model.charge.ChargeCode;
+import model.plan.Plan;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
-
+@Document
 public class TransactionCode {
+    @Id
     private String tCode;
     private TransactionCode parent;
-    private TransactionType transactionType;
     private List<TransactionCode> children;
-    private PlanBucketGroup parentPlanBucketGroup;
-    //TODO: to be constrained
+    private Plan mappedPlan;
     private List<KeyValueMap> attributes;
-/*
-    private TransactionType transactionType;
-    private TransactionMethod transactionMethod;
-    private TransactionCurrency transactionCurrency;
-*/
     private List<ChargeCode> mappedChargeCodes;
 
 }

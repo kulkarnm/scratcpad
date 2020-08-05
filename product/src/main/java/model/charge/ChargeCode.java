@@ -2,12 +2,13 @@ package model.charge;
 
 
 import model.buckets.Bucket;
-import model.buckets.BucketCode;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
+@Document
 public class ChargeCode {
+    @Id
     private String chargeCodeId;
-    private ChargeCodeType chargeCodeType;
+    private ChargeCodeClass chargeCodeClass;
     private Bucket mappedBucket;
 } 
