@@ -17,7 +17,6 @@ public class Plan {
     private String planId;
     private PlanClass planClass;
     private InterestRateDefinition interestRateDefinition;
-    //private List<PlanBucketGroup> planBucketGroups;
     private InterestCalculationStrategy interestCalculationStrategy;
     private List<BucketCode> bucketCodes;
     private List<TransactionCode> mappedTransactionCodes;

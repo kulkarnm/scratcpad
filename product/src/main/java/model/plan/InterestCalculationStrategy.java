@@ -1,6 +1,6 @@
 package model.plan;
 
-import model.interest.InterestAccrual;
+import model.interest.InterestAccrualMethod;
 import model.interest.InterestCalculationDateConsideration;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,6 +15,6 @@ public class InterestCalculationStrategy {
     // is grace period applicable for this charge( yes for retail interest, no for cash)
     private boolean isGraceApplicable;
     //is calculated daily or monthly
-    private InterestAccrual interestAccrual;
+    private InterestAccrualMethod interestAccrualMethod;
 
 } 

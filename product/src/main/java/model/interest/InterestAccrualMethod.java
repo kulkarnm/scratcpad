@@ -1,6 +1,6 @@
 package model.interest;
 
-public enum InterestAccrual {
+public enum InterestAccrualMethod {
     DAILY,
     MONTHLY
 }
