@@ -1,14 +1,13 @@
-package posting.containers.account;
+package posting.containers.plan;
 
 import model.plan.Plan;
 import org.joda.time.LocalDate;
+import posting.containers.account.Account;
 
-import java.math.BigDecimal;
-import java.util.List;
 
-public class PlanInstance {
+public class AccountPlanInstance {
     private Plan parentPlan;
+    private Account associatedAccount;
     private LocalDate planInstanceStartDate;
     private LocalDate planInstanceEndDate;
-    private List<BucketInstance> buckets;
 }
