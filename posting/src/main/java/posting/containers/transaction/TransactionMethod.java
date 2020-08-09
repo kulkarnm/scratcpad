@@ -7,4 +7,8 @@ public enum TransactionMethod {
     ORIGINATOR_CREDIT,
     REFUND,
     REFUND_ADJUSTMENT,
+    OVRLMT,
+    LATEPAY,
+    PAYMENT,
+    LOAN
 }

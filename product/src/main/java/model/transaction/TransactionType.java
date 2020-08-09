@@ -1,6 +1,7 @@
 package model.transaction;
 
 public enum TransactionType {
-    TRANSACTION,
-    FEE
+    PLAN,
+    FEE,
+    PAYMENT
 }

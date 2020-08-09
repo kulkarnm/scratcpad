@@ -1,20 +1,19 @@
 package model.transaction;
 
-import model.buckets.PlanBucketGroup;
 import model.charge.ChargeCode;
-import model.plan.Plan;
+import model.plan.PlanClass;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 @Document
-public class TransactionCode {
+public class TCode {
     @Id
     private String tCode;
     private TransactionType transactionType;
-    private TransactionCode parent;
-    private List<TransactionCode> children;
-    private Plan mappedPlan;
+    private TCode parent;
+    private List<TCode> children;
+    private PlanClass mappedPlanClass;
     private List<KeyValueMap> attributes;
     private List<ChargeCode> mappedChargeCodes;
 

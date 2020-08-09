@@ -1,8 +1,7 @@
 package model.plan;
 
-import model.buckets.BucketCode;
 import model.interest.InterestRateDefinition;
-import model.transaction.TransactionCode;
+import model.transaction.TCode;
 import org.springframework.data.annotation.Id;
 
 import java.util.List;
@@ -13,6 +12,6 @@ public class GlobalPlan {
     private PlanClass planClass;
     private InterestRateDefinition interestRateDefinition;
     private InterestCalculationStrategy interestCalculationStrategy;
-    private List<TransactionCode> mappedTransactionCodes;
+    private List<TCode> mappedTCodes;
 
 } 

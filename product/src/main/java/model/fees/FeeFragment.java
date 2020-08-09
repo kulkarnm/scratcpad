@@ -1,9 +1,8 @@
 package model.fees;
 
-import model.buckets.BucketCode;
 import model.interest.InterestRateDefinition;
 import model.plan.InterestCalculationStrategy;
-import model.transaction.TransactionCode;
+import model.transaction.TCode;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -17,6 +16,6 @@ public class FeeFragment {
     private FeeFragmentClass feeFragmentClass;
     private InterestRateDefinition interestRateDefinition;
     private InterestCalculationStrategy interestCalculationStrategy;
-    private List<TransactionCode> mappedTransactionCodes;
+    private List<TCode> mappedTCodes;
     private Fee parentFeeContainer;
 }

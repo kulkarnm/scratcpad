@@ -1,10 +1,13 @@
 package posting.containers.transaction;
 
 import org.joda.time.LocalDate;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
-
+@Document
 public class Transaction {
+    @Id
     private String transactionRefNo;
     private TransactionCode transactionCode;
     private TransactionType transactionType;
