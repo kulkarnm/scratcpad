@@ -1,7 +1,7 @@
 package model.product;
 
 
-import model.fees.ServiceFee;
+import model.fees.Fee;
 import model.plan.Plan;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,6 +14,6 @@ public class Product {
     private String productName;
     private List<Plan> plans;
     private int yearBase;
-    private List<ServiceFee> feesApplicable;
+    private List<Fee> feesApplicable;
     //private BillingCycle billingCycle;
 }

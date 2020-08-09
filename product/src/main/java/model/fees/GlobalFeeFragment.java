@@ -1,26 +1,22 @@
-package model.plan;
-
+package model.fees;
 
 import model.buckets.BucketCode;
 import model.interest.InterestRateDefinition;
-import model.product.Product;
+import model.plan.InterestCalculationStrategy;
 import model.transaction.TransactionCode;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-//equivalent to Plans in Vision+
 @Document
-public class Plan{
-    @Id
-    private String planId;
-    private GlobalPlan overriddenPlan;
-    //plan associated with a product, may override settings in GlobalPlan
-    private Product product;
-    private PlanClass planClass;
+public class GlobalFeeFragment {
+   @Id
+    private String feeFragmentId;
+    private String name;
+    private FeeFragmentClass feeFragmentClass;
     private InterestRateDefinition interestRateDefinition;
     private InterestCalculationStrategy interestCalculationStrategy;
-
     private List<TransactionCode> mappedTransactionCodes;
+
 }

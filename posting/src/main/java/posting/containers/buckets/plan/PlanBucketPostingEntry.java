@@ -1,11 +1,11 @@
-package posting.containers.buckets;
+package posting.containers.buckets.plan;
 
 import org.joda.time.LocalDate;
 
 import java.math.BigDecimal;
 
-public class BucketPostingEntry {
-    private BucketInstance associatedBucket;
+public class PlanBucketPostingEntry {
+    private AccountPlanBucketInstance associatedBucket;
     private LocalDate transactionDate;
     private LocalDate postingDate;
     private BigDecimal balance;

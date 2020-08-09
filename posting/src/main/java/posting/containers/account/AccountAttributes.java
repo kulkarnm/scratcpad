@@ -10,7 +10,6 @@ import java.util.List;
 public class AccountAttributes {
     private AccountType accountType;
     private LocalDate accountOpeningDate;
-    private Product product;
     private LocalDate transferredDate;
     private TotalCreditLimit totalCreditLimit;
     private List<CreditLimitHistoryInstance> creditLimitHistory;

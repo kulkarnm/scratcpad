@@ -1,6 +1,6 @@
-package model.buckets;
+package model.plan;
 
-public enum PlanBucketGroupClass {
+public enum PlanClassType {
     RETAIL,
     CASH,
     LOAN,

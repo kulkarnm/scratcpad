@@ -1,9 +1,11 @@
 package model.plan;
 
-public enum PlanClass {
-    RETAIL,
-    CASH,
-    LOAN,
-    //BILLING,
-    BALANCE_TRANSFER
-}
+import model.buckets.BucketCode;
+
+import java.util.List;
+
+public class PlanClass {
+    private String planClassId;
+    private PlanClassType planClassType;
+    private List<BucketCode> bucketCodes;
+} 

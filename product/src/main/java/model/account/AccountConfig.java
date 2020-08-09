@@ -1,9 +1,8 @@
 package model.account;
 
 
-import model.fees.ServiceFee;
+import model.fees.Fee;
 import model.interest.InterestRateDefinition;
-import model.product.Product;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,6 +11,6 @@ import java.util.List;
 public class AccountConfig {
     @Id
     private String accountDefinitionId;
-    private List<ServiceFee> feesOverride;
+    private List<Fee> feesOverride;
     private List<InterestRateDefinition> interestOverride;
 }

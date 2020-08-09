@@ -11,6 +11,7 @@ import java.util.List;
 public class TransactionCode {
     @Id
     private String tCode;
+    private TransactionType transactionType;
     private TransactionCode parent;
     private List<TransactionCode> children;
     private Plan mappedPlan;
